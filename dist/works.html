@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="https://kit.fontawesome.com/5243fb0ce0.js" crossorigin="anonymous"></script>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Alex blog | Works</title>
+</head>
+<body>
+
+    <div class="page" id="page">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list_item">
+                        <a href="../index.html" class="navigation__list_link">главная</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a href="#" class="navigation__list_link has-subnav">статьи</a>
+                        <ul class="subnav">
+                            <li class="navigation__list_subitem">
+                                <a href="#" class="navigation__list_subLink">Создание сайтов</a>
+                            </li>
+                            <li class="navigation__list_subitem">
+                                <a href="#" class="navigation__list_subLink">Заглушка</a>
+                            </li>
+                            <li class="navigation__list_subitem">
+                                <a href="#" class="navigation__list_subLink">Заглушка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a href="../text.html" class="navigation__list_link">обо мне</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a href="../text.html" class="navigation__list_link">заглушка</a>
+                    </li>
+                </ul>
+                <div class="navigation__right">
+                    <ul class="navigation__list">
+                        <li class="navigation__list_item">
+                            <a href="../profile.html" class="navigation__list_link">профиль</a>
+                        </li>
+                        <li class="navigation__list_item">
+                            <a href="../signin.html" class="navigation__list_link">выйти</a>
+                        </li>
+                    </ul>
+                    <form class="navigation__form" action="search.html" method="get">
+                        <input type="search" class="navigation__form_input" placeholder="Поиск по блогу">
+                        <button class="navigation__form_btn">
+                            <i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+            <button class="burger" type="button" id="sidebarToggle">
+                <span>Открыть навигацию</span>
+            </button>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__header">
+                <img src="../assets/images/sidebar_header.jpg" alt="sidebar_header.jpg">
+            </div>
+            <div class="sidebar__content">
+                <div class="profile">
+                    <img src="../assets/images/profile_photo1_small.jpg" alt="profile__avatar" class="profile__avatar">
+                    <div class="profile__header">
+                        <div class="profile__name">Alex Gusev</div>
+                        <div class="profile__prof">блог front-end разработчика</div>
+                    </div>
+                    <ul class="social social-fullversion">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/kooot553/" class="social__link" target="_blank">
+                                <img src="../assets/images/instagram.svg" alt="Alex Gusev instagram" class="social__link_img">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank">
+                                <img src="../assets/images/pinterest.svg" alt="Alex Gusev pinterest">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://vk.com/id3137887" class="social__link" target="_blank">
+                                <img src="../assets/images/vk.svg" alt="Alex Gusev vk">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="profile__text">
+                        Junior Front-end разработчик. Практикую верстку сайтов.
+                        Начал заниматься созданием сайтов в&nbsp;2020.
+                        Учусь и&nbsp;работаю с&nbsp;GeekBrains.
+                    </div><!--  /.profile__text   -->
+                </div><!-- /.profile  -->
+                <ul class="navigation__list navigation__list-mobile">
+                    <li class="navigation__list_item">
+                        <a href="../index.html" class="navigation__list_link">главная</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a href="#" class="navigation__list_link has-subnav">статьи</a>
+                        <ul class="subnav">
+                            <li class="navigation__list_subitem">
+                                <a href="#" class="navigation__list_subLink">Создание сайтов</a>
+                            </li>
+                            <li class="navigation__list_subitem">
+                                <a href="#" class="navigation__list_subLink">Заглушка</a>
+                            </li>
+                            <li class="navigation__list_subitem">
+                                <a href="#" class="navigation__list_subLink">Заглушка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a href="../text.html" class="navigation__list_link">обо мне</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a href="../text.html" class="navigation__list_link">заглушка</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a href="../profile.html" class="navigation__list_link">Профиль</a>
+                    </li>
+                    <li class="navigation__list_item">
+                        <a href="../signin.html" class="navigation__list_link">Выйти</a>
+                    </li>
+                </ul>
+            </div><!--  /.sidebar__content  -->
+            <div class="sidebar__footer">
+                <a href="../works.html" class="btn btn-red">Мои работы</a>
+                <button class="btn btn-blue" data-modal="contact-modal">Написать мне</button>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="container">
+                <!--    works    -->
+                <h1 class="page__title">Мои работы</h1>
+                
+                <article class="work">
+                    <div class="work__preview">
+                        <picture>
+                <!--            <source srcset="https://placehold.it/575x150" media="(max-width: 575px)">-->
+                            <a href="https://bezugolnikov.ru/" target="_blank"><img src="assets/images/work_preview1.jpg" alt="site"></a>
+                        </picture>
+                    </div>
+                    <div class="work__content">
+                        <h2 class="work__title">
+                            <a href="https://bezugolnikov.ru/" target="_blank">bezugolnikov.ru</a>
+                        </h2>
+                        <div class="work__description">
+                            Сайт визитка для фотографа на Vue.js
+                            Пока что сайт находится на постоянной доработке т.к. выполняю роль как разработчика, так и дизайнера,
+                            и мы до сих пор находимся в поиске дизайна, который понравится.
+                        </div>
+                        <ul class="tags">
+                            <li class="tags__item">Дизайн</li>
+                            <li class="tags__item">Создание сайта</li>
+                        </ul>
+                        <div class="work__footer">
+                            <a href="https://bezugolnikov.ru/" target="_blank"
+                               class="btn btn-blue btn-rounded btn-sm">Перейти на сайт</a>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </main>
+    </div>
+
+    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content-story">
+    <!--        <img src="https://placehold.it/420x580" alt="poster">-->
+            <video src="#" class="modal__video" poster="http://placehold.it/420x580"></video>
+        </div>
+    </div>
+    <div class="modal" id="contact-modal">
+        <div class="modal__content modal__content-contact">
+            <button type="button" class="modal__close">
+                <img src="../assets/images/close.svg" alt="Close">
+            </button>
+            <form class="form" id="form">
+                <div class="form__group form__group-md">
+                    <input
+                            type="text"
+                            class="form__control _req"
+                            placeholder="Ваше имя"
+                    >
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group-md">
+                    <input
+                            type="email"
+                            class="form__control _email _req"
+                            placeholder="Ваш email"
+                    >
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group-md">
+                    <textarea
+                            class="form__control form__control-textarea"
+                            placeholder="Текст сообщения"
+                    ></textarea>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__footer">
+                    <div class="form__group form__group form__group-md">
+                        <button
+                            type="submit"
+                            class="btn btn-blue btn-sm btn-rounded"
+                        >Отправить</button>
+                    </div>
+                </div>
+            </form>
+            <ul class="modal__footer">
+                <li>
+                    email:
+                    <a href="mailto:info@mywebsite.com ">info@mywebsite.com</a>
+                </li>
+                <li>
+                    тел:
+                    <a href="tel:+70123456789">+7-012-345-67-89</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="share-modal">
+        <div class="modal__content">
+            <button type="button" class="modal__close">
+                <img src="../assets/images/close.svg" alt="Close">
+            </button>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="https://www.instagram.com/kooot553/" class="social__link">
+                        <img src="../assets/images/facebook-modal.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="../assets/images/twitter-modal.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://vk.com/id3137887" class="social__link">
+                        <img src="../assets/images/vk-modal.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://vk.com/id3137887" class="social__link">
+                        <img src="../assets/images/copy-modal.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--    JS    -->
+    <script src="../assets/js/modal.js"></script>
+    <script src="../assets/js/mobileNav.js"></script>
+    <script src="../assets/js/textarea.js"></script>
+    <script src="../assets/js/senform.js"></script>
+</body>
+</html>
