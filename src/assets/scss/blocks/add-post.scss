@@ -1,0 +1,110 @@
+.add-post {
+  margin: 3rem 0;
+  box-shadow: 0 15px 25px rgba($black, .45);
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+
+  background-color: $secondary;
+
+  @include breakpoint($mobile-bp) {
+    margin: 1rem 0;
+    padding: .5rem 1.5rem;
+  }
+
+  &__form {
+    display: flex;
+    align-items: flex-end;
+
+    &_textarea {
+      display: block;
+      flex-grow: 1;
+      height: 34px;
+      overflow: hidden;
+
+      color: #d2d2d2;
+      background-color: transparent;
+      border: none;
+      resize: none;
+
+      font-family: inherit;
+      font-size: 1.5rem;
+
+      &::placeholder {
+        font-family: inherit;
+        font-size: 1.5rem;
+        //color: #d2d2d2;
+      }
+
+      @include breakpoint($mobile-bp) {
+        height: 2.9rem;
+      }
+    }
+
+    &_actions {
+      display: flex;
+      width: 12rem;
+      flex-shrink: 0;
+      text-align: right;
+      justify-content: flex-end;
+
+      @include breakpoint($mobile-bp) {
+        width: 8.5rem;
+      }
+    }
+  }
+
+  &__file,
+  &__send {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #EBEBEB url("../images/add-file.svg") no-repeat center;
+
+    cursor: pointer;
+
+    transition: all .2s linear;
+
+    @include breakpoint($mobile-bp) {
+      width: 3.4rem;
+      height: 3.4rem;
+      background-size: 1.5rem;
+    }
+    & input {
+      display: none;
+    }
+
+    &:hover {
+      background: darken(#ebebeb, 10%) url("../images/add-file.svg") no-repeat center;
+    }
+  }
+
+  &__file {
+    @include breakpoint($mobile-bp) {
+      background-size: 1.8rem;
+    }
+  }
+
+  &__send {
+    margin-left: 1.5rem;
+
+    font-size: 0;
+    color: transparent;
+
+    background: $blue url("../images/send.svg") no-repeat center;
+
+    @include breakpoint($mobile-bp) {
+      background-size: 1.5rem;
+    }
+
+
+    &:hover {
+      background: darken($blue, 5%) url("../images/send.svg") no-repeat center;
+    }
+  }
+
+}

@@ -1,0 +1,154 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint($tablet-bp) {
+    justify-content: flex-end;
+  }
+
+  &__list {
+    display: flex;
+
+    @include breakpoint($tablet-bp) {
+      display: none;
+    }
+
+    &_item {
+      position: relative;
+
+      transition: all .3s linear;
+
+      @include breakpoint($tablet-bp) {
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: $primary!important;
+        }
+      }
+      &:hover {
+        background-color: $blue;
+
+        > .subnav {
+          display: block;
+        }
+      }
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &_link {
+      display: inline-block;
+      padding: 1.3em 1.3em;
+
+      text-decoration: none;
+      color: $white;
+      font-family: inherit;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+
+      transition: all .3s ease-in-out;
+
+      @include breakpoint($tablet-bp) {
+        padding-left: 2rem;
+        padding-right: 0;
+        width: 100%;
+
+        font-size: 1.4rem;
+        line-height: 0;
+      }
+
+      &.has-subnav {
+        position: relative;
+        padding-right: 3.5rem;
+
+        @include breakpoint($tablet-bp) {
+          width: 100%;
+        }
+
+        &:after {
+          position: absolute;
+          display: block;
+          top: 50%;
+          right: 1.35rem;
+          margin-top: 2px;
+          transform: translateY(-50%);
+
+
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 6px 5px 0 5px;
+          border-color: #ffffff transparent transparent transparent;
+        }
+      }
+
+
+    }
+
+    &-mobile {
+      display: none;
+
+      @include breakpoint($tablet-bp) {
+        display: flex;
+        flex-direction: column;
+
+        margin: 3rem 0;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__form {
+    display: flex;
+    & input {
+      padding: 1.42rem 2rem;
+
+      color: rgba($white, 40%);
+      font-family: inherit;
+      font-size: 1.2rem;
+
+      outline: none;
+      border: none;
+
+      background-color: $primary;
+
+      transition: all .2s linear;
+
+      &:hover {
+        box-shadow: inset 0 0 10px rgba($blue, .9);
+      }
+
+      &:active,
+      &:focus {
+        background-color: darken($primary, 5%);
+        outline: transparentize($blue, .7);
+        &:hover {
+          box-shadow: none;
+        }
+      }
+
+      &::placeholder {
+        color: rgba($white, 40%);
+      }
+    }
+
+    &_btn {
+      background-color: darken($primary, 5%);
+      border: none;
+      height: 100%;
+      color: white;
+
+      &:hover {
+        color: rgba($white, 40%);
+        background-color: $primary;
+      }
+    }
+  }
+}
